@@ -42,3 +42,14 @@ header button {
     border-radius: 36px !important;
     font-weight: 600 !important;
 }
+
+footer {
+    background: var(--background-color);
+    height: 600px;
+    color: #cad8da;
+    padding-top: 100px;
+}
+
+footer .row {
+    margin-top: 100px;
+}
