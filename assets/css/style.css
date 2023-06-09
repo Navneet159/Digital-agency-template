@@ -43,6 +43,90 @@ header button {
     font-weight: 600 !important;
 }
 
+
+.section-features {
+    height: 1500px;
+    background: var(--background-color);
+    color: white;
+
+}
+
+
+.services-underline {
+    width: 300px;
+    height: 7px;
+    background: var(--green-dark);
+    margin: auto;
+}
+
+.img-conatiner {
+    height: 80px;
+    width: 54px;
+    /* background: red; */
+    margin: auto;
+    padding-top: 30px;
+}
+
+
+.section-features .card {
+    /* background: green; */
+    border-top: 10px solid #46a788;
+    height: 550px;
+    margin: auto;
+}
+
+.section-features .card:hover {
+    box-shadow: 0 0 10px 2px #fff;
+    /* background: red; */
+}
+
+.card-body {
+    color: black !important;
+}
+
+.card-title {
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+.card-text {
+    margin-top: 30px;
+}
+
+.card-learn-more a {
+    text-decoration: none;
+    color: #1bae70;
+    font-weight: bold;
+
+}
+
+.card-learn-more button {
+    background: #1a3641;
+    color: var(--green-light);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.card-learn-more button:hover {
+    background: var(--green-light);
+    color: var(--green-dark);
+}
+
+.underline {
+    width: 70px;
+    height: 7px;
+    background: #1bae70;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
 footer {
     background: var(--background-color);
     height: 600px;
