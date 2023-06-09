@@ -91,7 +91,9 @@ header button {
 
 .card-text {
     margin-top: 30px;
+    height: 210px;
 }
+
 
 .card-learn-more a {
     text-decoration: none;
@@ -105,6 +107,7 @@ header button {
     color: var(--green-light);
     padding: 10px 30px;
     border-radius: 10px;
+    margin-top: 40px;
 }
 
 .card-learn-more button:hover {
