@@ -21,7 +21,7 @@
 }
 
 /* by mukan */
-.sections-main-heading {
+/* .sections-main-heading {
     font-size: calc(1.2rem + 2.5vw);
     font-weight: 700;
     color: var(--white);
@@ -36,8 +36,8 @@
 .content-heading {
     font-size: calc(.8rem + .9vw);
     font-weight: 600;
-    color: var(--white);
-}
+    c
+} */
 
 .text-font {
     font-size: calc(.8rem + .3vw);
@@ -98,7 +98,7 @@ header button {
     padding: 10px;
     border: 1px solid #ccc;
     margin-left: -1px;
-    font-size: calc(.8rem + .9vw);
+    font-size: calc(.3rem + .9vw);
     font-weight: 600;
     vertical-align: middle;
     position: relative;
@@ -106,6 +106,7 @@ header button {
     width: 264px;
     height: 78px;
     display: table-cell;
+    background: black;
 
     /*
     styles copy pasted above (.season_tab label)
@@ -117,6 +118,15 @@ header button {
     } */
 }
 
+.season_tab label svg {
+    margin-right: px;
+}
+
+.season_tab label svg:hover {
+    color: red;
+}
+
+
 .season_tab [type=radio] {
     display: none;
 }
@@ -125,7 +135,7 @@ header button {
     position: absolute;
     top: 0;
     left: 286px;
-    background: var(--green-light);
+    background: var(--background-color);
     right: 0;
     bottom: 0;
     padding: 40px;
@@ -136,7 +146,7 @@ header button {
 .season_content div span {
     animation: 0.5s ease-out 0s 1 slideInFromTop;
     font-weight: bold;
-    font-size: calc(.8rem + .3vw);
+    font-size: calc(.7rem + .3vw);
     color: var(--white);
 
     /*  
@@ -153,11 +163,16 @@ style copied above (.season_content div span)
 
 [type=radio]:checked~label {
     background: var(--white);
-    border-bottom: 2px solid #8bc34a;
+    border-bottom: 2px solid #46a788;
     z-index: 2;
-    color: var(--background-color);
+    color: var(--black);
     font-weight: bold;
 }
+
+[type=radio]:checked~label svg {
+    /* fill: #06ccfd; */
+}
+
 
 [type=radio]:checked~label~.season_content {
     z-index: 1;
