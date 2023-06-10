@@ -20,6 +20,31 @@
     padding: 0;
 }
 
+/* by mukan */
+.sections-main-heading {
+    font-size: calc(1.2rem + 2.5vw);
+    font-weight: 700;
+    color: var(--white);
+}
+
+.sections-sub-heading {
+    font-size: calc(.8rem + .9vw);
+    font-weight: 400;
+    color: var(--white);
+}
+
+.content-heading {
+    font-size: calc(.8rem + .9vw);
+    font-weight: 600;
+    color: var(--white);
+}
+
+.text-font {
+    font-size: calc(.8rem + .3vw);
+    color: var(--white);
+}
+
+
 header {
     /* background: var(--background-color); */
     width: 100%;
@@ -44,83 +69,101 @@ header button {
 }
 
 
-.section-features {
-    height: 1500px;
+
+
+
+/* Vertical Tabs */
+
+.section-services {
     background: var(--background-color);
-    color: white;
-
 }
 
+.season_tabs {
+    position: relative;
+    min-height: 360px;
+    /* This part sucks */
+    clear: both;
+    margin: 25px 0;
+}
 
-.services-underline {
-    width: 300px;
-    height: 7px;
+.season_tab {
+    float: left;
+    clear: both;
+    width: 286px;
+}
+
+.season_tab label {
     background: var(--green-dark);
-    margin: auto;
+    color: var(--white);
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    font-size: calc(.8rem + .9vw);
+    font-weight: 600;
+    vertical-align: middle;
+    position: relative;
+    left: 1px;
+    width: 264px;
+    height: 78px;
+    display: table-cell;
+
+    /*
+    styles copy pasted above (.season_tab label)
+
+    .content-heading{
+        font-size: calc(.8rem + .9vw);
+        font-weight: 600;
+        color: var(--white);
+    } */
 }
 
-.img-conatiner {
-    height: 80px;
-    width: 54px;
-    /* background: red; */
-    margin: auto;
-    padding-top: 30px;
+.season_tab [type=radio] {
+    display: none;
+}
+
+.season_content {
+    position: absolute;
+    top: 0;
+    left: 286px;
+    background: var(--green-light);
+    right: 0;
+    bottom: 0;
+    padding: 40px;
+    border: 1px solid #ccc;
+
+}
+
+.season_content div span {
+    animation: 0.5s ease-out 0s 1 slideInFromTop;
+    font-weight: bold;
+    font-size: calc(.8rem + .3vw);
+    color: var(--white);
+
+    /*  
+style copied above (.season_content div span)
+
+.text-font {
+    font-size: calc(.8rem + .3vw);
+    color: var(--white);
+} */
+
 }
 
 
-.section-features .card {
-    /* background: green; */
-    border-top: 10px solid #46a788;
-    height: 550px;
-    margin: auto;
-}
 
-.section-features .card:hover {
-    box-shadow: 0 0 10px 2px #fff;
-    /* background: red; */
-}
-
-.card-body {
-    color: black !important;
-}
-
-.card-title {
+[type=radio]:checked~label {
+    background: var(--white);
+    border-bottom: 2px solid #8bc34a;
+    z-index: 2;
     color: var(--background-color);
     font-weight: bold;
 }
 
-.card-text {
-    margin-top: 30px;
-    height: 210px;
+[type=radio]:checked~label~.season_content {
+    z-index: 1;
 }
 
 
-.card-learn-more a {
-    text-decoration: none;
-    color: #1bae70;
-    font-weight: bold;
-
-}
-
-.card-learn-more button {
-    background: #1a3641;
-    color: var(--green-light);
-    padding: 10px 30px;
-    border-radius: 10px;
-    margin-top: 40px;
-}
-
-.card-learn-more button:hover {
-    background: var(--green-light);
-    color: var(--green-dark);
-}
-
-.underline {
-    width: 70px;
-    height: 7px;
-    background: #1bae70;
-    margin: auto;
-}
 
 
 
