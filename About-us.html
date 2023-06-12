@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>About Us</title>
+</head>
+<style>
+    .section-core-values {
+        height: 1000px;
+        background: #1a2e35;
+        padding-top: 1px;
+
+    }
+
+    .section-core-values-heading {
+        font-size: 60px;
+        font-weight: bold;
+        color: #cbdae1;
+        margin-top: 10px;
+        /* margin: auto; */
+        text-align: center;
+        /* background: red; */
+    }
+
+    .section-core-values-connecting-lines {
+        height: 200px;
+        color: #cbdae1;
+    }
+
+    .section-core-values-col {
+        /* background: red; */
+        height: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-core-values-value-circles {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: red; */
+    }
+
+    .values-outer-circle {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: #2c444e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    #values-inner-circle-1 {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #ee48fc, #2584fc);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: radial-gradient(#ee48fc,#2584fc) ; */
+    }
+
+    #values-inner-circle-2 {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #ffd029, #fc7939);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #values-inner-circle-3 {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #eeec03, #7bc635);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #values-inner-circle-4 {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #43ccfd, #7423fb);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #values-inner-circle-5 {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #fece38, #fe47b9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .values-logo-circle {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background: #2c444e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .values-logo-d-flex {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background: #2c444e;
+    }
+
+    .values-logo {
+        color: #b6cbd6;
+        font-size: 40px;
+
+    }
+
+    .caret-down-icon {
+        color: #cbdae1;
+        font-size: 50px;
+    }
+
+    .small-outer-circle {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: #2a454c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: +1;
+    }
+
+    .small-inner-circle {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background: rgb(4, 0, 255);
+        z-index: +1;
+    }
+
+    #small-inner-circle-1 {
+        background-image: linear-gradient(to right, #ee48fc, #2584fc);
+    }
+
+    #small-inner-circle-2 {
+        background-image: linear-gradient(to right, #ffd029, #fc7939);
+    }
+
+    #small-inner-circle-3 {
+        background-image: linear-gradient(to right, #eeec03, #7bc635);
+    }
+
+    #small-inner-circle-4 {
+        background-image: linear-gradient(to right, #43ccfd, #7423fb);
+    }
+
+    #small-inner-circle-5 {
+        background-image: linear-gradient(to right, #fece38, #fe47b9);
+    }
+
+    .dotted-line-for-circle {
+        height: 2px;
+        border: 2px dashed #cbdae1;
+        position: absolute;
+        top: -26px;
+    }
+
+    .value-heading {
+        color: #cbdae1;
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .value-description {
+        color: #cbdae1;
+        font-size: 14px;
+        margin-top: 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <section class="section-core-values">
+        <div class="container">
+            <div class="row section-core-values-heading justify-content-center">CORE VALUES</div>
+            <!-- <div class=" row section-core-values-connecting-lines">lines </div> -->
+            <div class="row mt-3 justify-content-between">
+                <div class="col-sm-2 section-core-values-col">
+                    <div class="section-core-values-value-circles">
+                        <div class="values-outer-circle">
+                            <div id="values-inner-circle-1">
+                                <div class="values-logo-circle">
+                                    <div class="values-logo">
+                                        <i class="fa-solid fa-hourglass-start"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 section-core-values-col">
+                    <div class="section-core-values-value-circles">
+                        <div class="values-outer-circle">
+                            <div id="values-inner-circle-2">
+                                <div class="values-logo-circle">
+                                    <div class="values-logo">
+                                        <i class="fa-solid fa-bullseye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 section-core-values-col">
+                    <div class="section-core-values-value-circles">
+                        <div class="values-outer-circle">
+                            <div id="values-inner-circle-3">
+                                <div class="values-logo-circle">
+                                    <div class="values-logo">
+                                        <i class="fa-solid fa-lightbulb"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 section-core-values-col">
+                    <div class="section-core-values-value-circles">
+                        <div class="values-outer-circle">
+                            <div id="values-inner-circle-4">
+                                <div class="values-logo-circle">
+                                    <div class="values-logo">
+                                        <i class="fa-solid fa-trophy"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 section-core-values-col">
+                    <div class="section-core-values-value-circles">
+                        <div class="values-outer-circle">
+                            <div id="values-inner-circle-5">
+                                <div class="values-logo-circle">
+                                    <div class="values-logo">
+                                        <i class="fa-solid fa-flag-checkered"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-sm-2 d-flex justify-content-center">
+                    <div class="caret-down-icon">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center">
+                    <div class="caret-down-icon">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center">
+                    <div class="caret-down-icon">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center">
+                    <div class="caret-down-icon">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center">
+                    <div class="caret-down-icon">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between mt-3">
+                <div class="col-sm-2 d-flex justify-content-center">
+                    <div class="small-outer-circle">
+                        <div id="small-inner-circle-1" class="small-inner-circle"> </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center">
+                    <div class="small-outer-circle">
+                        <div id="small-inner-circle-2" class="small-inner-circle"> </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center">
+                    <div class="small-outer-circle">
+                        <div id="small-inner-circle-3" class="small-inner-circle"> </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center">
+                    <div class="small-outer-circle">
+                        <div id="small-inner-circle-4" class="small-inner-circle"> </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center">
+                    <div class="small-outer-circle">
+                        <div id="small-inner-circle-5" class="small-inner-circle"> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row position-relative">
+                <div class="dotted-line-for-circle"></div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-sm-2 d-flex justify-content-center value-heading">
+                    INTEGRITY
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center value-heading">
+                    GOALS
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center value-heading">
+                    INNOVATION
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center value-heading">
+                    QUALITY
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center value-heading">
+                    EXCELLENCE
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-sm-2 d-flex justify-content-center value-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam explicabo beatae aspernatur at,
+                    quidem autem exercitationem magnam blanditiis similique unde. Reiciendis pariatur impedit omnis eos
+                    voluptatum consequuntur, atque illum rerum.
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center value-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam explicabo beatae aspernatur at,
+                    quidem autem exercitationem magnam blanditiis similique unde. Reiciendis pariatur impedit omnis eos
+                    voluptatum consequuntur, atque illum rerum.
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center value-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam explicabo beatae aspernatur at,
+                    quidem autem exercitationem magnam blanditiis similique unde. Reiciendis pariatur impedit omnis eos
+                    voluptatum consequuntur, atque illum rerum.
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center value-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam explicabo beatae aspernatur at,
+                    quidem autem exercitationem magnam blanditiis similique unde. Reiciendis pariatur impedit omnis eos
+                    voluptatum consequuntur, atque illum rerum.
+                </div>
+                <div class="col-sm-2 d-flex justify-content-center value-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam explicabo beatae aspernatur at,
+                    quidem autem exercitationem magnam blanditiis similique unde. Reiciendis pariatur impedit omnis eos
+                    voluptatum consequuntur, atque illum rerum.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

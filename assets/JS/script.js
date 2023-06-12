@@ -19,3 +19,6 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
   }
   Tip: Also check out How To - Horizontal Tabs.
+
+
+  
