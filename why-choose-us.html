@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<style>
+    .section-choose-us {
+        background: #1a3641;
+        height: 900px;
+    }
+
+
+    .faded-text {
+        color: white;
+        text-align: center;
+        font-size: 60px;
+        opacity: 0.2;
+        transform: scale(2, 2);
+        width: auto;
+        margin: auto;
+    }
+
+    .alldiv {
+
+        white-space: pre;
+    }
+
+    .rectangle {
+        background: linear-gradient(to right, #1a3c4b, #265063);
+        height: 400px;
+        width: 250px;
+        /* border: 2px solid #ff0000; */
+        border-radius: 25px;
+        z-index: 1;
+    }
+
+    .logo-container {
+
+        /* background: yellow; */
+
+    }
+
+    .logo-outer {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        /* background: red; */
+        /* margin: auto; */
+    }
+
+    .logo-inner {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background: #1a3641;
+        /* margin: auto; */
+    }
+
+    .font-aws-logo {
+        color: #05f7aa;
+        font-size: 30px;
+    }
+
+    .logo-outer-onhover {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: none;
+        border: 2px dashed #05f7aa;
+        display: none;
+
+    }
+
+    .logo-middle-onhover {
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        background: #472f17;
+        display: none;
+    }
+
+    .logo-inner-onhover {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: magenta;
+        display: none;
+
+
+    }
+
+    #one-inside {
+        background: transparent;
+        height: 400px;
+        width: 250px;
+        border: 2px solid #ff0000;
+        border-radius: 25px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        visibility: hidden;
+        padding-left: 10px;
+    }
+
+    #two-inside {
+        background: #46a788;
+        height: 400px;
+        width: 250px;
+        border: 2px solid #ff0000;
+        border-radius: 25px;
+        top: 0;
+        left: 0;
+        /* z-index: -1; */
+    }
+
+    #three-inside {
+        background: #46a788;
+        height: 400px;
+        width: 250px;
+        border: 2px solid #ff0000;
+        border-radius: 25px;
+        top: 0;
+        left: 0;
+        /* z-index: -1; */
+    }
+
+    #four-inside {
+        background: #46a788;
+        height: 400px;
+        width: 250px;
+        border: 2px solid #ff0000;
+        border-radius: 25px;
+        top: 0;
+        left: 0;
+        /* z-index: -1; */
+    }
+
+
+
+    /* ================= HOVER EFFECT ========================== */
+
+    #one:hover {
+        /* transform: translate(100px, 20px); */
+        transition: all 1s;
+        height: 200px;
+        width: 400px;
+        margin-top: 200px;
+        /* background: transparent; */
+        /* margin-right: 100px; */
+    }
+
+    #one:hover #one-inside {
+        transition: all 1s;
+        height: 200px;
+        width: 400px;
+        margin-top: -200px;
+        background: transparent;
+        border: none;
+        color: #d3ffd0;
+        visibility: visible;
+    }
+
+    #one:hover .logo-container {
+        position: absolute;
+        top: -30px;
+        left: 170px;
+        transition: ease-in-out 1s;
+    }
+
+
+
+
+    #one:hover .logo {
+        transform: scale(1.5);
+        transition: all 1s;
+    }
+
+    #one:hover .logo-outer {
+        background: pink;
+        display: none !important;
+    }
+
+
+    #one:hover .logo-outer-onhover {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        scale: 1.2;
+        transition: all 1s;
+
+    }
+
+    #one:hover .logo-middle-onhover {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transition: all 1s;
+    }
+
+
+    #one:hover .logo-inner-onhover {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        scale: 1.1;
+        transition: all 1s;
+    }
+</style>
+
+<body>
+    <section class="section-choose-us">
+        <div class="container-fluid">
+            <div class="container pt-1">
+                <div class="row mt-5">
+                    <p class="faded-text">Why Choose Us?</p>
+                </div>
+                <div class="row">
+                    <span class="text-white text-center fs-1 fw-bold mt-5">Why Choose Us?</span>
+                </div>
+                <div class="row mt-5 justify-content-center  alldiv">
+                    <div id="one" class=" col-sm-2 rectangle position-relative">
+                        <div class="logo-container d-flex justify-content-center ">
+                            <div class="logo-outer-onhover ">
+                                <div class="logo-middle-onhover">
+                                    <div class="logo-inner-onhover">
+                                        <img src="https://images.unsplash.com/photo-1605092676920-8ac5ae40c7c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80"
+                                            alt="" class="img-fluid tiger-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="logo-outer d-flex justify-content-center align-items-center ">
+                                <div class="logo-inner d-flex justify-content-center align-items-center">
+                                    <i class="font-aws-logo fa-solid fa-lock"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="one-inside" class="position-absolute text-wrap">
+                            <p class="fs-3 fw-bold">Liquidity Locked <i class="fa-solid fa-arrow-right"></i></p>
+                            <p>The TigeMoon smart contract was written in solidity 0.8.18 version. The contract has been
+                                verifieed</p>
+                            <p class="fw-bold ">Learn more <i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+                    <div id="one" class=" col-sm-2 rectangle position-relative">
+                        <div class="logo-container d-flex justify-content-center ">
+                            <div class="logo-outer-onhover ">
+                                <div class="logo-middle-onhover">
+                                    <div class="logo-inner-onhover">
+                                        <img src="https://images.unsplash.com/photo-1605092676920-8ac5ae40c7c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80"
+                                            alt="" class="img-fluid tiger-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="logo-outer d-flex justify-content-center align-items-center ">
+                                <div class="logo-inner d-flex justify-content-center align-items-center">
+                                    <i class="font-aws-logo fa-solid fa-lock"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="one-inside" class="position-absolute text-wrap">
+                            <p class="fs-3 fw-bold">Liquidity Locked <i class="fa-solid fa-arrow-right"></i></p>
+                            <p>The TigeMoon smart contract was written in solidity 0.8.18 version. The contract has been
+                                verifieed</p>
+                            <p class="fw-bold ">Learn more <i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+                    <div id="one" class=" col-sm-2 rectangle position-relative">
+                        <div class="logo-container d-flex justify-content-center ">
+                            <div class="logo-outer-onhover ">
+                                <div class="logo-middle-onhover">
+                                    <div class="logo-inner-onhover">
+                                        <img src="https://images.unsplash.com/photo-1605092676920-8ac5ae40c7c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80"
+                                            alt="" class="img-fluid tiger-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="logo-outer d-flex justify-content-center align-items-center ">
+                                <div class="logo-inner d-flex justify-content-center align-items-center">
+                                    <i class="font-aws-logo fa-solid fa-lock"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="one-inside" class="position-absolute text-wrap">
+                            <p class="fs-3 fw-bold">Liquidity Locked <i class="fa-solid fa-arrow-right"></i></p>
+                            <p>The TigeMoon smart contract was written in solidity 0.8.18 version. The contract has been
+                                verifieed</p>
+                            <p class="fw-bold ">Learn more <i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+                    <div id="one" class=" col-sm-2 rectangle position-relative">
+                        <div class="logo-container d-flex justify-content-center ">
+                            <div class="logo-outer-onhover ">
+                                <div class="logo-middle-onhover">
+                                    <div class="logo-inner-onhover">
+                                        <img src="https://images.unsplash.com/photo-1605092676920-8ac5ae40c7c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80"
+                                            alt="" class="img-fluid tiger-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="logo-outer d-flex justify-content-center align-items-center ">
+                                <div class="logo-inner d-flex justify-content-center align-items-center">
+                                    <i class="font-aws-logo fa-solid fa-lock"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="one-inside" class="position-absolute text-wrap">
+                            <p class="fs-3 fw-bold">Liquidity Locked <i class="fa-solid fa-arrow-right"></i></p>
+                            <p>The TigeMoon smart contract was written in solidity 0.8.18 version. The contract has been
+                                verifieed</p>
+                            <p class="fw-bold ">Learn more <i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+    </section>
+</body>
+
+</html>
